@@ -9,6 +9,13 @@ class RadiomanTest {
 
 
     @Test
+    void shouldSetStationAllArq() {
+        Radioman radio = new Radioman(15, 0, 14, 0, 100, 100);
+        radio.setCurrentStation(16);
+        assertEquals(16, radio.getCurrentStation());
+    }
+
+    @Test
     void shouldSetStation() {
         Radioman radio = new Radioman(20);
         radio.setCurrentStation(15);
