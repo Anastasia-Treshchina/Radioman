@@ -27,7 +27,7 @@ public class Radioman {
     }
 
     public void nextStation() {
-        if (countStation -1  <= currentStation) {
+        if (countStation - 1 <= currentStation) {
             setCurrentStation(minStation);
         } else {
             setCurrentStation(currentStation + 1);
